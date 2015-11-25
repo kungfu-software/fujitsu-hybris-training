@@ -1,0 +1,22 @@
+<hybrisconfig xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../bin/platform/resources/schemas/extensions.xsd'>
+  <extensions>
+    <path dir='${HYBRIS_BIN_DIR}' />
+
+    <!-- ext-platform -->
+    <extension name="admincockpit" />
+    <extension name="backoffice" />
+    <extension name="cockpit" />
+    <extension name="hmc" />
+    <extension name="mcc" />
+    <extension name="platformhmc" />
+
+    <!-- custom -->
+    <extension name="trainingcore" />
+    <extension name="trainingfacade" />
+    <extension name="traininginitdata" />
+    <extension name="trainingstorefront" />
+
+
+
+  </extensions>
+</hybrisconfig>

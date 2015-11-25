@@ -1,0 +1,8 @@
+#Ant properties
+#Thu Mar 26 07:17:58 CET 2015
+builddate=20150326 0717
+description=trainingcore
+name=trainingcore
+vendor=hybris
+version=5.5.1.0
+version.api=5.5.1

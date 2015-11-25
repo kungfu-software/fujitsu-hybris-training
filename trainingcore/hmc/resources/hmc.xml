@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- [y] hybris Platform Copyright (c) 2000-2015 hybris AG All rights reserved.
+  This software is the confidential and proprietary information of hybris ("Confidential
+  Information"). You shall not disclose such Confidential Information and shall
+  use it only in accordance with the terms of the license agreement you entered
+  into with hybris. -->
+<configuration xmlns="hybris.de/schemas/hmc/generic"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="hybris.de/schemas/hmc/generic hmc.xsd">
+
+  <explorertree width="185" columns="2">
+
+    <group name="user" expand="false" description="group.user.description">
+        <typeref type="BusinessPartner" description="typeref.customer.description"/>
+    </group>
+
+  </explorertree>
+
+  <!-- Configuration for extension acceleratorservices -->
+
+  <type name="BusinessPartner" mode="append">
+    <organizer>
+      <search mode="replace">
+        <condition attribute="name"/>
+        <condition attribute="email"/>
+      </search>
+      <result defaultview="list">
+        <listview mode="replace">
+          <itemlayout>
+            <attribute name="name" width="200"/>
+            <attribute name="email" width="200"/>
+            <attribute name="age" width="100"/>
+          </itemlayout>
+        </listview>
+      </result>
+      <editor>
+        <essentials>
+          <listlayout>
+            <attribute name="name" editable="true"/>
+            <attribute name="email" editable="true"/>
+          </listlayout>
+        </essentials>
+        <tab name="tab.common" position="0">
+          <section name="section.common">
+            <listlayout>
+              <attribute name="name" editable="true"/>
+              <attribute name="email" editable="true"/>
+              <attribute name="age" editable="true"/>
+            </listlayout>
+          </section>
+        </tab>
+      </editor>
+    </organizer>
+    <defaultreference searchattribute="email"
+                      mode="append" sortattribute="email">
+      <itemlayout>
+        <attribute name="email"/>
+      </itemlayout>
+    </defaultreference>
+  </type>
+
+</configuration>

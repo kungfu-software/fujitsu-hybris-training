@@ -1,0 +1,2 @@
+REMOVE BusinessPartner;email[unique=true]
+;test@test.com

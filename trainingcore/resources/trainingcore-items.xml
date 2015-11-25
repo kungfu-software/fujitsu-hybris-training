@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<items  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="items.xsd">
+
+  <itemtypes>
+
+    <itemtype code="BusinessPartner" autocreate="true" generate="true">
+        <attributes>
+            <attribute qualifier="email" type="java.lang.String" >
+                <persistence type="property"/>
+                <modifiers optional="false" unique="true" />
+            </attribute>
+            <attribute qualifier="name" type="java.lang.String" >
+                <persistence type="property"/>
+                <modifiers optional="false" />
+            </attribute>
+            <attribute qualifier="age" type="java.lang.Integer">
+                <persistence type="property" />
+            </attribute>
+        </attributes>
+    </itemtype>
+
+  </itemtypes>
+</items>

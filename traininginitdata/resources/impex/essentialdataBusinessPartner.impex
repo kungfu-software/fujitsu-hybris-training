@@ -1,0 +1,2 @@
+INSERT_UPDATE BusinessPartner;email[unique=true];name;age
+;test@test.com;Seabook Chen;20
